@@ -11,22 +11,22 @@ public class AlertDialogFragment extends DialogFragment {
 
     public Dialog onCreateDialog (Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Тест!")
-                .setMessage("Спасибо за проверку!")
+        builder.setTitle("Здравствуй МИРЭА!")
+                .setMessage("Успех близок?")
                 .setIcon(R.mipmap.ic_launcher_round)
-                .setPositiveButton("ОК", new DialogInterface.OnClickListener() {
+                .setPositiveButton("на паузе", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         ((MainActivity)getActivity()).onOkClicked();
                         dialog.cancel();
                     }
                 })
-                .setNeutralButton("Neutral", new DialogInterface.OnClickListener() {
+                .setNeutralButton("нет", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         ((MainActivity)getActivity()).onNeutralClicked();
                         dialog.cancel();
                     }
                 })
-                .setNegativeButton("Закрыть", new DialogInterface.OnClickListener() {
+                .setNegativeButton("иду дальше", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         ((MainActivity)getActivity()).onCancelClicked();
                         dialog.cancel();

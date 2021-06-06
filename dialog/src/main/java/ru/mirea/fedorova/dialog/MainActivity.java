@@ -85,15 +85,15 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void onOkClicked() {
-        Toast.makeText(getApplicationContext(), "ОК",
+        Toast.makeText(getApplicationContext(), "на паузе",
                 Toast.LENGTH_SHORT).show();
     }
     public void onCancelClicked() {
-        Toast.makeText(getApplicationContext(), "Закрыто",
+        Toast.makeText(getApplicationContext(), "нет",
                 Toast.LENGTH_SHORT).show();
     }
     public void onNeutralClicked() {
-        Toast.makeText(getApplicationContext(), "Neutral",
+        Toast.makeText(getApplicationContext(), "иду дальше",
                 Toast.LENGTH_SHORT).show();
     }
 }

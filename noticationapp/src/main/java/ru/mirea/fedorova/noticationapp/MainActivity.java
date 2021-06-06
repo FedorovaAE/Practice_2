@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this, CHANNEL_ID)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Title")
+                        .setContentTitle("Сообщение")
                         .setContentText("Notification text for MIREA")
                         .setWhen(System.currentTimeMillis())
                         .setProgress(100, 50, false)
